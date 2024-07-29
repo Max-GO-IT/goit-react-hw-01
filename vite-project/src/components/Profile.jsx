@@ -14,28 +14,28 @@ export const userData = {
   };
 
 
-const Profile = ({name,tag,location,image="https://cdn-icons-png.flaticon.com/512/1077/1077012.png",stats})=> {
+const Profile = ({name,tag,location,stats})=> {
     return (
     <div> 
     <div> 
         <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="User avatar"/> 
-        <p class="name">{name}</p> 
-        <p class="tag">{tag}</p> 
-        <p class="location">{location}</p>
+        <p className="name">{name}</p> 
+        <p className="tag">{tag}</p> 
+        <p className="location">{location}</p>
     </div>
   
-    <ul class="stats"> 
+    <ul className="stats"> 
         <li> 
             <span>Followers</span> 
-            <span class="stats-folowers">{stats.followers}</span> 
+            <span className="stats-folowers">{stats.followers}</span> 
         </li> 
         <li> 
             <span>Views</span> 
-            <span class="stats-views">{stats.views}</span> 
+            <span className="stats-views">{stats.views}</span> 
         </li> 
         <li> 
             <span>Likes</span> 
-            <span class="stats-likes">{stats.likes}</span> 
+            <span className="stats-likes">{stats.likes}</span> 
         </li> 
     </ul> 
 </div>)
