@@ -1,0 +1,15 @@
+.friendList_ul {
+    display: flex;
+    list-style-type: none; 
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .friendList_li {
+    text-decoration: none;
+    border: 3px solid;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+  }

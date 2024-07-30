@@ -1,3 +1,4 @@
+import "./FriendList.css"
 import FriendListItem from "./FriendListItem"
 import PropTypes from 'prop-types';
 
@@ -7,9 +8,9 @@ const Friendlist = ({ friends=[] }) => {
    
     
     return (
-      <ul>
+      <ul className = "friendList_ul">
         {friends.map(friend => (
-          <li id={friend.id} key={friend.name}> {/* Используйте уникальный ключ для каждого элемента списка */}
+          <li className = "friendList_li" id={friend.id} key={friend.name}> {/* Используйте уникальный ключ для каждого элемента списка */}
             <FriendListItem 
               name={friend.name}
               avatar={friend.avatar}
