@@ -1,69 +1,65 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f0f2f5;
-}
-
 .profile {
-    background: white;
+    border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
     padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.profile-header {
+
+.profile > div {
     margin-bottom: 20px;
 }
 
-.avatar {
+
+.profile img {
+    border-radius: 50%;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #007bff;
 }
 
-.name {
-    font-size: 1.25rem;
+
+.username {
+    font-size: 1.5em;
     font-weight: bold;
     margin: 10px 0 5px;
 }
 
-.username {
-    color: #555;
-    margin: 0 0 5px;
+
+.tag {
+    color: #888;
+    margin-bottom: 5px;
 }
+
 
 .location {
-    color: #888;
-    margin: 0;
+    color: #555;
 }
 
-.stats {
+
+.stats_value {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-around;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 10px 0;
 }
 
-.stats li {
+.stats_value li {
+    font-size: 0.9em;
     text-align: center;
+    text-decoration: none;
 }
 
-.stat-label {
+
+.stats_value span:first-child {
     display: block;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.stat-value {
-    font-size: 1.1rem;
-    font-weight: bold;
+    color: #888;
+    margin-bottom: 5px;
 }
